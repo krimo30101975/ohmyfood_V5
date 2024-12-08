@@ -1,0 +1,161 @@
+/*menu checked */
+.plat {
+    input{
+        appearance: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        &:checked {
+            & + .plat__container {
+                flex: 0 0 calc(100% - 59px);
+            }
+        }
+        &:hover {
+            & + .plat__container {
+                flex: 0 0 calc(100% - 59px);
+            }
+        }
+    }
+}
+/* btn fléche */
+.header__navtop__arrow {
+	position: absolute;
+	font-size: 17px;
+	top: 17px;
+	left: 17px;
+}
+
+/* BUTTON COEUR PAGE ACCUEIL */
+.btn__ico {
+    position: absolute;
+	@include flexCenter;
+    text-align: center;
+    width: 22px;
+    height: 30px;
+	bottom: 17px;
+	right: 17px;
+	z-index: 5;
+    .btn__label{
+		position: absolute;
+        @include flexCenter;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        .btn__vide {
+            @include flexCenter;
+            width: 22px;
+            height: 22px;
+        }
+        .btn__Plein {
+            position: absolute;
+            @include flexCenter;
+            width: 22px;
+            height: 22px;
+            top: 0;
+            left: 0;
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient($color-purple, $color-pink);
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+	input {
+		position: absolute;
+		visibility: hidden;
+		width: 22px;
+		height: 22px;
+		&:checked {
+			~ {
+				label {
+					.btn__Plein {
+						opacity: 1;
+						background-image: linear-gradient($color-purple, $color-pink);
+					}
+				}
+			}
+		}
+	}
+}
+
+/* BUTTON COEUR PAGE MENU */
+.btn__ico__menu {
+	position: relative;
+	@include flexCenter;
+    width: 22px;
+    height: 22px;
+	right: 10px;
+	z-index: 5;
+    .btn__label{
+        @include flexCenter;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        cursor: pointer;
+        .btn__vide {
+            @include flexCenter;
+            width: 22px;
+            height: 22px;
+        }
+        .btn__Plein {
+            @include flexCenter;
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient($color-purple, $color-pink);
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+	input {
+		position: absolute;
+		visibility: hidden;
+		width: 22px;
+		height: 22px;
+		&:checked {
+			~ {
+				label {
+					.btn__Plein {
+						opacity: 1;
+						background-image: linear-gradient($color-purple, $color-pink);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* btn multicolor */
+.btn__multicolor {
+	position: relative;
+	text-align: center;
+	min-width: 186px;
+	padding: 15px 40px;
+	border: 0px;
+	border-radius: 25px;
+	font-size: 16px;
+	font-weight: 500;
+	color: $color-white;
+	background-image: linear-gradient($color-pink,$color-purple);
+	box-shadow: 0 4px 10px 0 $boxshadow-25;
+    cursor: pointer;
+	transition: 0.3s;
+	&:hover {
+		background-image: linear-gradient($color-pink-c,$color-purple-c);
+		box-shadow: 0 4px 15px 0 $boxshadow-35;
+	}
+}

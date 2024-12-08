@@ -1,0 +1,89 @@
+
+/* LOADER animation composants loading */
+@keyframes rotate-forward {/* animation ring forward */
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-backward {/* animation ring backward */
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes flash {/* animation texte */
+    0% {
+        background-image: linear-gradient($color-pink,$color-purple);
+    }
+    50% {
+        background-image: linear-gradient($color-pink-c,$color-purple-c);
+    }
+    100% {
+        background-image: linear-gradient($color-pink,$color-purple);
+    }
+}
+@keyframes transition_disparition {/* animation disparition loading */
+    80% {
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+/* MENU animation apparition */
+@keyframes apparition {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.scroll__scaleA {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.5s 0.3s ease-out forwards;
+}
+.scroll__scaleB {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.5s 0.5s ease-out forwards;
+}
+.scroll__scaleC {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: apparition 0.5s 0.8s ease-out forwards;
+}
+.scroll__scaleD {
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: apparition 0.5s 1s ease-out forwards;
+}
+
+/* MENU animation apparition */
+@keyframes apparition_1 {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+.apparition__scale_1 {
+    animation: apparition_1 linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+ 

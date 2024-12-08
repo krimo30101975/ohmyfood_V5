@@ -1,0 +1,24 @@
+[33mcommit 9370aefc217175b32e05100d419c03bbec26b31e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: krimo30101975 <selematous@gmail.com>
+Date:   Sun Dec 8 00:45:20 2024 +0100
+
+    libérer le loader
+
+[33mcommit 5a948c54523b384d933dd70a5bbec2eeeeda9f99[m
+Author: krimo30101975 <selematous@gmail.com>
+Date:   Sun Dec 8 00:17:40 2024 +0100
+
+    rectification de mediaquery scss restaurant__block en le retirant du max-width:600
+
+[33mcommit 7724631d82276e2c1c587fe24b4063c82582e07f[m
+Author: krimo30101975 <selematous@gmail.com>
+Date:   Sat Dec 7 23:50:14 2024 +0100
+
+    rectification du block texte dans restaurant en scss pour eviter que le coeur mange
+     sur le texte
+
+[33mcommit 60a7f12f2e2574f61e75dd84fe2f20d6485aacd6[m
+Author: krimo30101975 <selematous@gmail.com>
+Date:   Sat Dec 7 23:41:59 2024 +0100
+
+    premier commit

@@ -1,0 +1,57 @@
+
+/* LOADER */
+.loader {
+    position: fixed;
+    @include flexCenter;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: $color-black;
+    z-index: 10;
+    opacity:1;
+    @include animLoad;
+    &::before {
+        display: flex;
+    }
+    &::after {
+        display: none;
+    }
+    .loadEnfants {
+        position: absolute;
+        border-radius: 50%;
+        &:nth-child(1) {
+             width: 220px;
+             height: 220px;
+             border-top: 4px solid $color-purple-c;
+             @include animloadEnfants_for;
+        }
+        &:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            border-right: 4px solid $color-pink-c;
+            @include animLoadEnfants_bac;
+        }
+        &:nth-child(3) {
+            width: 180px;
+            height: 180px;
+            border-bottom: 4px solid $color-blue-light;
+            @include animloadEnfants_for;
+        }
+        &:nth-child(4) {
+            width: 160px;
+            height: 160px;
+            border-left: 4px solid $color-grey-light;
+            @include animLoadEnfants_bac;
+        }
+    }
+    .loadEnfants__txt {
+        font-family: $typo_secondary;
+        font-style: italic;
+        font-size: 20px;
+        background-image: linear-gradient($color-pink,$color-purple);
+        background-clip: text;
+        color: transparent;
+        @include animflash;
+    }
+}
