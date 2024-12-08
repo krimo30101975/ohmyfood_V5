@@ -1,0 +1,11 @@
+/// mon pseudo GitHub ///
+
+	krimo30101975
+
+/// Le lien vers votre repository GitHub ///
+
+	https://github.com/krimo30101975/ohmyfood_V5
+
+///  Le lien de la version en ligne git page ///
+
+	https://krimo30101975.github.io/ohmyfood_V5/
