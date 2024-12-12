@@ -1,7 +1,7 @@
 
-/* @media */
+/* @media tablette */
 	
-@media screen and (min-width:376px) {
+@media screen and (min-width:768px) {
     .header {
 		.header__navbottom {
 			box-shadow: none;
@@ -11,9 +11,6 @@
 	.container {
 		position: relative;
 		/* section restaurant */
-		.restaurant__part {
-			width: 46%;
-		}
 		.modeEmploi {
 			padding: 30px;
 			box-shadow: none;
@@ -23,13 +20,16 @@
 			font-weight: 700;
 			padding: 0 20px;
 		}
-		.fonction,
-		.restaurants {
-			padding-left: 10%;
-			padding-right: 10%;
+		/* section fonction */
+		.fonction__group {
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
-		.restaurants__block {
-			gap: 8%;
+		.fonction__block {
+			width: auto;
+			min-width: 270px;
+			height: 72.38px;
+			flex-grow: 1;
 		}
 	}     
 	/* PAGE MENU */
@@ -98,24 +98,20 @@
 		}
 	}
 }
-	
-@media screen and (max-width:1006px) {
-	.fonction__group {
-		align-items: center;
-		flex-direction: column;
-		.fonction__block {
-			width: 100%;
-			max-width: 500px;
-			padding: 0 auto;
+/* @media PC */
+@media screen and (min-width:1025px) {
+	.container {
+		/* restaurant */
+		.restaurants__block {
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
-	}
+		.restaurant__part {
+			width: 48%;
+			min-width: 270px;
+			height: 262px;
+			flex-grow: 1;
+		}
+	}     
 }
-	
-@media screen and (max-width:600px) {
-    .restaurant__part {
-		width: 100%;
-		max-width: 800px;
-    }
-}
-
 

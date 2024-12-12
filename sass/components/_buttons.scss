@@ -27,33 +27,26 @@
 	top: 17px;
 	left: 17px;
 }
-
 /* BUTTON COEUR PAGE ACCUEIL */
 .btn__ico {
     position: absolute;
 	@include flexCenter;
     text-align: center;
-    width: 22px;
-    height: 30px;
-	bottom: 17px;
-	right: 17px;
-	z-index: 5;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+	bottom: 35px;
+	right: 25px;
+	z-index: 1;
     .btn__label{
 		position: absolute;
         @include flexCenter;
-        width: 22px;
-        height: 22px;
         cursor: pointer;
         .btn__vide {
-            @include flexCenter;
-            width: 22px;
-            height: 22px;
+            display: block;
         }
         .btn__Plein {
             position: absolute;
-            @include flexCenter;
-            width: 22px;
-            height: 22px;
             top: 0;
             left: 0;
             color: transparent;
@@ -69,8 +62,8 @@
 	input {
 		position: absolute;
 		visibility: hidden;
-		width: 22px;
-		height: 22px;
+        width: 25px;
+        height: 25px;
 		&:checked {
 			~ {
 				label {
@@ -88,25 +81,24 @@
 .btn__ico__menu {
 	position: relative;
 	@include flexCenter;
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
 	right: 10px;
 	z-index: 5;
     .btn__label{
         @include flexCenter;
-        width: 22px;
-        height: 22px;
+        width: 25px;
+        height: 25px;
         position: absolute;
         cursor: pointer;
         .btn__vide {
-            @include flexCenter;
-            width: 22px;
-            height: 22px;
+            width: 25px;
+            height: 25px;
         }
         .btn__Plein {
-            @include flexCenter;
-            width: 22px;
-            height: 22px;
+            width: 25px;
+            height: 25px;
             position: absolute;
             top: 0;
             left: 0;
@@ -123,8 +115,8 @@
 	input {
 		position: absolute;
 		visibility: hidden;
-		width: 22px;
-		height: 22px;
+        width: 25px;
+        height: 25px;
 		&:checked {
 			~ {
 				label {

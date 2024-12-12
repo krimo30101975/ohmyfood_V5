@@ -19,10 +19,10 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     @include widthHeight;
     margin-bottom: -40px;
-    padding: 40px 15px;
+    padding: 30px 8px;
     border-radius: 40px 40px 0 0;
     background-color: $color-grey-light;
     .restaurant {
@@ -31,12 +31,10 @@
         justify-content: space-between;
         align-items: center;
         @include widthHeight;
+        padding-right: 10px;
     }
     .restaurant__title {
         font-family: $typo_secondary;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 20px;
         width: 100%;
         left: 0;
     }
